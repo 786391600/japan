@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/resize.js"></script>
+    <script src="js/jq1.9.js"></script>
+    <script src="js/Slide.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    <link rel="stylesheet" href="css/indexmain.css">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/PIE_IE678.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <![endif]-->
+    <!--[if IE 9]>
+    <script type="text/javascript" src="js/PIE_IE9.js"></script>
+    <![endif]-->
+
+    <script>
+        $(document).ready(function(){
+            resize(1366);
+            if (window.PIE) {
+                $('.phone').each(function() {
+                    PIE.attach(this);
+                });
+                setTimeout(function(){
+                    $('.hd ul li').each(function() {
+                        PIE.attach(this);
+                    })
+                },0)
+
+            }
+            $('.fullSlide').mouseover(function(){
+                $('.banner-btn').css({opacity:0.4});
+            })
+            $('.fullSlide').mouseout(function(){
+                $('.banner-btn').css({opacity:0});
+            })
+            jQuery(".fullSlide").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"leftLoop", vis:"auto", autoPlay:true, autoPage:true, trigger:"click" });
+        })
+    </script>
+
+</head>
+<body>
+  <div class="header">
+     <div class="header-con">
+         <div class="logo">
+             <a href="javascript:;">
+                 <img src="image/logo.png">
+             </a>
+         </div>
+         <div class="nav">
+             <ul>
+                 <li><a href="javascript:;">商品介绍</a></li>
+                 <li><a href="javascript:;">商品介绍</a></li>
+                 <li><a href="javascript:;">商品介绍</a></li>
+                 <li><a href="javascript:;">商品介绍</a></li>
+                 <li><a href="javascript:;">商品介绍</a></li>
+             </ul>
+         </div>
+     </div>
+  </div>
+<div class="banner fullSlide">
+    <div class="bd">
+        <ul>
+            <li><a target="_blank" href="javascript:;"><img src="image/未标题-14.png"/></a></li>
+            <li><a target="_blank" href="javascript:;"><img src="image/未标题-14.png"/></a></li>
+            <li><a target="_blank" href="javascript:;"><img src="image/未标题-14.png"/></a></li>
+            <li><a target="_blank" href="javascript:;"><img src="image/未标题-14.png"/></a></li>
+            <li><a target="_blank" href="javascript:;"><img src="image/未标题-14.png"/></a></li>
+        </ul>
+    </div>
+    <div class="hd"><ul></ul></div>
+    <div class="banner-btn btn-left prev">&lt;</div>
+    <div class="banner-btn btn-right next">&gt;</div>
+</div>
+<div class="con">
+    <div class="con-idea">
+         <div class="con-idea-head">
+             企业理念
+         </div>
+        <h2 class="con-idea-tit">
+            企业理念的标题
+        </h2>
+        <div class="con-idea-con">
+            企业理念的内容企业理念的内容企业理念的内容企业理念的内容企业理念的内容企业理念的内容
+            企业理念的内容企业理念的内容企业理念的内容企业理念的内容企业理念的内容企业理念的内容
+            念的内容企业理念的内
+        </div>
+    </div>
+    <div class="con-int con-int-one">
+        <img src="image/intone.png" alt="">
+        <div class="con-int-continer">
+             <div class="c-i-cot-con c-i-cot-con-left">
+                 <h1>Freecall</h1>
+                 <p class="zy">小标题小标题小标题小标题</p>
+                 <p>内容内容内容内容内容内容内容</p>
+                 <p>内容内容内容内容内容内容内容</p>
+                 <p>内容内容内容内容内容内容内容</p>
+                 <p>内容内容内容内容内容内容内容</p>
+                 <p>内容内容内容内容内容内容内容</p>
+                 <p>内容内容内容内容内容内容内容</p>
+                 <p>内容内容内容内容内容内容内容</p>
+                 <a href="javascript:;" class="but">按钮</a>
+             </div>
+        </div>
+    </div>
+    <div class="con-int con-int-two">
+        <img src="image/inttwo.png" alt="">
+        <div class="con-int-continer">
+            <div class="c-i-cot-con c-i-cot-con-right">
+                <h1>Freecall</h1>
+                <p class="zy">小标题小标题小标题小标题</p>
+                <p>内容内容内容内容内容内容内容</p>
+                <p>内容内容内容内容内容内容内容</p>
+                <p>内容内容内容内容内容内容内容</p>
+                <p>内容内容内容内容内容内容内容</p>
+                <p>内容内容内容内容内容内容内容</p>
+                <p>内容内容内容内容内容内容内容</p>
+                <p>内容内容内容内容内容内容内容</p>
+                <a href="javascript:;" class="but">按钮</a>
+            </div>
+        </div>
+    </div>
+    <div class="con-int con-int-three">
+        <img src="image/intthree.png" alt="">
+        <div class="con-int-continer">
+            <div class="c-i-cot-con c-i-cot-con-left">
+                <h1>Freecall</h1>
+                <p class="zy">小标题小标题小标题小标题</p>
+                <p>内容内容内容内容内容内容内容</p>
+                <p>内容内容内容内容内容内容内容</p>
+                <p>内容内容内容内容内容内容内容</p>
+                <p>内容内容内容内容内容内容内容</p>
+                <p>内容内容内容内容内容内容内容</p>
+                <p>内容内容内容内容内容内容内容</p>
+                <p>内容内容内容内容内容内容内容</p>
+                <a href="javascript:;" class="but">按钮</a>
+            </div>
+        </div>
+    </div>
+</div>
+ <div class="footer">
+      <div class="footer-con">
+          <div class="footer-con-continer">
+           <div class="footer-con-l">
+               <a href="javascript:;">
+                   <img src="image/logow.png" alt="">
+               </a>   
+            </div>
+            <div class="footer-con-c">
+                <div class="fnav">
+                    <p class="footer-title">标题标题标题</p>
+                    <ul>
+                        <li><a href="javascript:;">内容内容内容</a></li>
+                        <li><a href="javascript:;">内容内容内容</a></li>
+                        <li><a href="javascript:;">内容内容内容</a></li>
+                    </ul>
+                </div>
+                <div class="fnav">
+                    <p class="footer-title">标题标题标题</p>
+                    <ul>
+                        <li><a href="javascript:;">内容内容内容</a></li>
+                        <li><a href="javascript:;">内容内容内容</a></li>
+                        <li><a href="javascript:;">内容内容内容</a></li>
+                    </ul>
+                </div>
+                <div class="fnav">
+                    <p class="footer-title">标题标题标题</p>
+                    <ul>
+                        <li><a href="javascript:;">内容内容内容</a></li>
+                        <li><a href="javascript:;">内容内容内容</a></li>
+                        <li><a href="javascript:;">内容内容内容</a></li>
+                    </ul>
+                </div>
+                <div class="fnav af">
+                    <p class="footer-title">标题标题标题</p>
+                    <ul>
+                        <li><a href="javascript:;">内容内容内容</a></li>
+                        <li><a href="javascript:;">内容内容内容</a></li>
+                        <li><a href="javascript:;">内容内容内容</a></li>
+                    </ul>
+                </div>
+            </div>
+             <div class="footer-con-r">
+                 <div class="phone">
+                        <p class="phone-num">03-6279-0521</p>
+                        <p class="phone-dz">联系地址地地</p>
+                 </div>
+                 <div class="phone-icon">
+                     <img src="image/phoneicon.png" alt="">
+                 </div>
+            </div>
+          </div>
+      </div>
+     <div class="footer-ft">
+         <p>
+             Copyright 2016 CLOOPEN.ALL rights reserved.
+         </p>
+     </div>
+ </div>
+</body>
+</html>
