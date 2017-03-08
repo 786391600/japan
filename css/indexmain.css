@@ -1,6 +1,7 @@
 /*header*/
 body{
     font-family: 'メイリオ イタリック';
+    overflow-x: hidden;
 }
 img{
     border-style: none;
@@ -108,7 +109,7 @@ body,ul,h1{
 /*con*/
 .con{
     width:100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
 
 }
 .con-idea{
@@ -214,6 +215,36 @@ body,ul,h1{
     margin-top: 0.2rem;
 
 }
+.con-int-img1{
+    position: absolute;
+    top:-0.5rem;
+    right:-2rem;
+    z-index: 1000;
+}
+.con-int-img1 img{
+    height: 5.7rem;
+    width:7.63rem;
+}
+.con-int-img2{
+    position: absolute;
+    top:-0.3rem;
+    left:-1rem;
+    z-index: 1000;
+}
+.con-int-img2 img{
+    width:5.24rem;
+    height: 5.57rem;
+}
+.con-int-img3{
+    position: absolute;
+    top:-0.5rem;
+    right:-1rem;
+}
+.con-int-img3 img{
+    height: 5.66rem;
+    width:3.05rem;
+}
+
 .c-i-cot-con-left{
     text-align: left;
 }
