@@ -7,7 +7,7 @@
     <script src="js/jq1.9.js"></script>
     <script src="js/Slide.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
-    <link rel="stylesheet" href="css/indexmain.css">
+    <link rel="stylesheet" href="css/three.css">
     <!--[if lt IE 9]>
     <script type="text/javascript" src="js/PIE_IE678.js"></script>
     <link rel="stylesheet" href="css/index.css">
@@ -37,6 +37,14 @@
                 $('.banner-btn').css({opacity:0});
             })
             jQuery(".fullSlide").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"leftLoop", vis:"auto", autoPlay:true, autoPage:true, trigger:"click" });
+            $(window).resize(function(){
+                window.location.href=window.location.href
+            })
+
+            $('.ifr').load(function(){
+                $('.login').hide();
+            })
+
         })
     </script>
 
@@ -60,93 +68,16 @@
         </div>
     </div>
 </div>
-<div class="banner fullSlide">
-    <div class="bd">
-        <ul>
-            <li><a target="_blank" href="javascript:;"><img src="image/未标题-14.png"/></a></li>
-            <li><a target="_blank" href="javascript:;"><img src="image/未标题-14.png"/></a></li>
-            <li><a target="_blank" href="javascript:;"><img src="image/未标题-14.png"/></a></li>
-            <li><a target="_blank" href="javascript:;"><img src="image/未标题-14.png"/></a></li>
-            <li><a target="_blank" href="javascript:;"><img src="image/未标题-14.png"/></a></li>
-        </ul>
-    </div>
-    <div class="hd"><ul></ul></div>
-    <div class="banner-btn btn-left prev">&lt;</div>
-    <div class="banner-btn btn-right next">&gt;</div>
-</div>
-<div class="con">
-    <div class="con-idea">
-        <div class="con-idea-head">
-            企业理念
-        </div>
-        <h2 class="con-idea-tit">
-            企业理念的标题
-        </h2>
-        <div class="con-idea-con">
-            企业理念的内容企业理念的内容企业理念的内容企业理念的内容企业理念的内容企业理念的内容
-            企业理念的内容企业理念的内容企业理念的内容企业理念的内容企业理念的内容企业理念的内容
-            念的内容企业理念的内
-        </div>
-    </div>
-    <div class="con-int con-int-one">
-        <img src="image/intone.png" alt="">
-        <div class="con-int-continer">
-            <div class="c-i-cot-con c-i-cot-con-left">
-                <h1>Freecall</h1>
-                <p class="zy">小标题小标题小标题小标题</p>
-                <p>内容内容内容内容内容内容内容</p>
-                <p>内容内容内容内容内容内容内容</p>
-                <p>内容内容内容内容内容内容内容</p>
-                <p>内容内容内容内容内容内容内容</p>
-                <p>内容内容内容内容内容内容内容</p>
-                <p>内容内容内容内容内容内容内容</p>
-                <p>内容内容内容内容内容内容内容</p>
-                <a href="javascript:;" class="but">按钮</a>
-            </div>
-            <div class="con-int-img1">
-                <img src="image/conintimg1.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="con-int con-int-two">
-        <img src="image/inttwo.png" alt="">
-        <div class="con-int-continer">
-            <div class="c-i-cot-con c-i-cot-con-right">
-                <h1>Freecall</h1>
-                <p class="zy">小标题小标题小标题小标题</p>
-                <p>内容内容内容内容内容内容内容</p>
-                <p>内容内容内容内容内容内容内容</p>
-                <p>内容内容内容内容内容内容内容</p>
-                <p>内容内容内容内容内容内容内容</p>
-                <p>内容内容内容内容内容内容内容</p>
-                <a href="javascript:;" class="but">按钮</a>
-            </div>
-            <div class="con-int-img2">
-                <img src="image/conintimg2.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="con-int con-int-three">
-        <img src="image/intthree.png" alt="">
-        <div class="con-int-continer">
-            <div class="c-i-cot-con c-i-cot-con-left">
-                <h1>Freecall</h1>
-                <p class="zy">小标题小标题小标题小标题</p>
-                <p>内容内容内容内容内容内容内容</p>
-                <p>内容内容内容内容内容内容内容</p>
-                <p>内容内容内容内容内容内容内容</p>
-                <p>内容内容内容内容内容内容内容</p>
-                <p>内容内容内容内容内容内容内容</p>
-                <p>内容内容内容内容内容内容内容</p>
-                <p>内容内容内容内容内容内容内容</p>
-                <a href="javascript:;" class="but">按钮</a>
-            </div>
-         <div class="con-int-img3">
-             <img src="image/conintimg3.png" alt="">
-         </div>
-        </div>
+<!--banner开始-->
+<div class="banner">
+    <img src="image/未标题-2.png" alt="">
+    <div class="banner-but">
+        バナー
     </div>
 </div>
+<!--介绍开始-->
+
+<!--页脚-->
 <div class="footer">
     <div class="footer-con">
         <div class="footer-con-continer">
