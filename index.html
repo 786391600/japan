@@ -8,12 +8,13 @@
     <script src="js/Slide.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
     <link rel="stylesheet" href="css/indexmain.css">
-    <!--[if lt IE 9]>
+    <!--[if IE 8]>
     <script type="text/javascript" src="js/PIE_IE678.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <![endif]-->
     <!--[if IE 9]>
     <script type="text/javascript" src="js/PIE_IE9.js"></script>
+    <link rel="stylesheet" href="css/index.css">
     <![endif]-->
     <script>
         $(document).ready(function(){
@@ -28,6 +29,9 @@
                     })
                 },0)
                 $('.twonav').each(function() {
+                    PIE.attach(this);
+                })
+                $('.header').each(function() {
                     PIE.attach(this);
                 })
 
@@ -48,6 +52,14 @@
             }).mouseout(function(){
                 var eq=$(this).index()
                 $('.twonav').eq(eq).hide();
+            })
+            /*导航*/
+            $(window).scroll(function(){
+                if($(window).scrollTop()>=$('.header').get(0).offsetHeight){
+                    $('.header').css({position:'absolute',top:$(window).scrollTop()})
+                }else{
+                    $('.header').css({position:'relative',top:0})
+                }
             })
 
         })

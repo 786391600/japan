@@ -15,6 +15,9 @@ body,ul,h1{
     height: 137px;
     box-shadow: 0px 0px 10px black;
     position: relative;
+    z-index: 3000;
+    background: url(../image/navbg.png);
+    behavior: url(PIE.htc);
 }
 .header-con{
     width:1028px;

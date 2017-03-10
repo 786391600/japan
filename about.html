@@ -31,6 +31,9 @@
                 $('.twonav').each(function() {
                     PIE.attach(this);
                 })
+                $('.header').each(function() {
+                    PIE.attach(this);
+                })
 
             }
             $('.fullSlide').mouseover(function(){
@@ -51,6 +54,14 @@
             }).mouseout(function(){
                 var eq=$(this).index()
                 $('.twonav').eq(eq).hide();
+            })
+            /*导航*/
+            $(window).scroll(function(){
+                if($(window).scrollTop()>=$('.header').get(0).offsetHeight){
+                    $('.header').css({position:'absolute',top:$(window).scrollTop()})
+                }else{
+                    $('.header').css({position:'relative',top:0})
+                }
             })
         })
     </script>

@@ -11,6 +11,9 @@ body,ul{
     width:100%;
     min-width: 1345px;/*最小宽度*/
     height: 137px;
+    position: relative;
+    z-index: 3000;
+    background: url(../image/navbg.png);
 }
 .header-con{
     width:1028px;

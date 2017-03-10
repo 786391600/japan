@@ -15,6 +15,9 @@ body,ul,h1{
     height: 1.37rem;
     box-shadow: 0px 0px 10px black;
     position: relative;
+    z-index: 3000;
+    background: url(../image/navbg.png);
+
 }
 .header-con{
     width:10.28rem;
