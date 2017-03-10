@@ -1,7 +1,4 @@
 /*header*/
-body{
-    font-family: 'メイリオ イタリック';
-}
 img{
     border-style: none;
 }
@@ -12,6 +9,7 @@ body,ul{
 }
 .header{
     width:100%;
+    min-width: 1345px;/*最小宽度*/
     height: 137px;
 }
 .header-con{
@@ -52,6 +50,7 @@ body,ul{
 /*banner*/
 .banner{
     width:100%;
+    min-width: 1345px;/*最小宽度*/
     height: 684px;
     position: relative;
 }
@@ -108,8 +107,6 @@ body,ul{
 .con-idea-head{
     width:274px;
     height:65px;
-    border-bottom: 1px solid #EBEBEB;
-    border-top: 1px solid #EBEBEB;
     position: absolute;
     left: 0;
     right: 0;
@@ -119,12 +116,14 @@ body,ul{
     font-weight: bold;
     top:-26px;
     background: white;
+    line-height: 65px;
 }
 .con-idea-tit{
     text-align: center;
     padding-top: 66px;
     padding-bottom: 46px;
     margin: 0;
+    font-size: 16px;
 }
 .con-idea-con{
     width:576px;
@@ -134,12 +133,14 @@ body,ul{
 }
 
 
+
 /*产品介绍*/
 .con-int{
     width:100%;
     height: 500px;
     position: relative;
 }
+
 .con-int:before{
     content: "";
     display: block;
@@ -157,6 +158,88 @@ body,ul{
 .con-int img{
     width:100%;
     height: 100%;
+}
+.con-int-continer{
+    position: absolute;
+    width:1058px;
+    height: 100%;
+    top:0;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+}
+.c-i-cot-con{
+    padding-top: 40px;
+}
+.c-i-cot-con h1{
+    font-size: 30px;
+    color: #1D3249;
+}
+.c-i-cot-con .zy{
+    font-weight: bold;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    color: #1D3249;
+}
+.c-i-cot-con p{
+    font-size: 18px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    color: #1D3249;
+}
+.c-i-cot-con .but{
+    font-size: 14px;
+    color:white;
+    display: block;
+    text-decoration: none;
+    background: #1D3249;
+    width:120px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.con-int-img1{
+    position: absolute;
+    top:-50px;
+    right:-200px;
+    z-index: 1000;
+}
+.con-int-img1 img{
+    height: 570px;
+    width:763px;
+}
+.con-int-img2{
+    position: absolute;
+    top:-30px;
+    left:-100px;
+    z-index: 1000;
+}
+.con-int-img2 img{
+    width:524px;
+    height: 557px;
+}
+.con-int-img3{
+    position: absolute;
+    top:-50px;
+    right:-100px;
+}
+.con-int-img3 img{
+    height: 566px;
+    width:305px;
+}
+
+.c-i-cot-con-left{
+    text-align: left;
+}
+.c-i-cot-con-right{
+    text-align: right;
+}
+.c-i-cot-con-right .but{
+    float: right;
 }
 .con-int-one{
     /*background: url("../image/intone.png");*/
@@ -181,7 +264,7 @@ body,ul{
     padding-bottom: 52px;
 }
 .footer-con-continer{
-    width:1082px;
+    width:1182px;
     margin: 0 auto;
     padding-top: 90px;
 
@@ -243,7 +326,7 @@ body,ul{
 }
 .phone-icon{
     position:absolute;
-    top:-50px;
+    top:-65px;
     left: 95px;
 }
 .footer-ft{

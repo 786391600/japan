@@ -13,12 +13,12 @@ body,ul,h1{
 }
 .header{
     width:100%;
-    height: 1.37rem;
+    height: 137px;
     box-shadow: 0px 0px 10px black;
     position: relative;
 }
 .header-con{
-    width:10.28rem;
+    width:1028px;
     height: 100%;
     margin: 0 auto;
 }
@@ -43,10 +43,10 @@ body,ul,h1{
 .nav li{
     height: 100%;
     float: left;
-    padding-left: 0.32rem;
-    padding-right: 0.32rem;
-    line-height: 1.37rem;
-    font-size: 0.20rem;
+    padding-left: 32px;
+    padding-right: 32px;
+    line-height: 137px;
+    font-size: 20px;
 }
 .nav a{
     text-decoration: none;
@@ -58,26 +58,26 @@ body,ul,h1{
 /*banner*/
 .banner{
     background: yellow;
-    height: 2.2rem;
+    height: 220px;
 }
 .banner img{
     width: 100%;
-    height: 2.2rem;
+    height: 220px;
 }
 /*内容*/
 .con{
     width:100%;
 }
 .con-continer{
-    width:9.52rem;
+    width:952px;
     margin: 0 auto;
-    padding-top: 1rem;
+    padding-top: 100px;
 }
 .con-continer ul{
     width:100%;
-    font-size: 0.2rem;
+    font-size: 20px;
     overflow: hidden;
-    margin-bottom: 0.5rem;
+    margin-bottom: 50px;
 }
 .con-continer li{
     float: left;
@@ -93,12 +93,12 @@ body,ul,h1{
 .con-con p{
     margin: 0;
     padding: 0;
-    margin-bottom: 0.05rem;
+    margin-bottom: 5px;
 }
 .map{
     width:100%;
-    height: 4.86rem;
-    margin-bottom: 1rem;
+    height: 486px;
+    margin-bottom: 100px;
     position: relative;
 }
 .map iframe{
@@ -123,27 +123,27 @@ body,ul,h1{
     background: #18211E;
 }
 .footer-con{
-    border-bottom: 0.02rem solid #B3B5B4;
+    border-bottom: 2px solid #B3B5B4;
     overflow: hidden;
-    padding-bottom: 0.52rem;
+    padding-bottom: 52px;
 }
 .footer-con-continer{
-    width:11.82rem;
+    width:1182px;
     margin: 0 auto;
     overflow: hidden;
-    padding-top: 0.90rem;
+    padding-top: 90px;
     box-sizing: border-box;
-    padding-left: 0.5rem;
+    padding-left: 50px;
 
 }
 .footer-con-l{
     float: left;
-    margin-right: 0.1rem;
+    margin-right: 10px;
     line-height: 0;
 }
 .footer-con-l img{
-    width:0.61rem;
-    height: 0.59rem;
+    width:61px;
+    height: 59px;
 }
 .footer-con-c{
     float: left;
@@ -160,60 +160,60 @@ body,ul,h1{
     color: white;
 }
 .footer-con-c .footer-title{
-    font-size: 0.16rem;
+    font-size: 16px;
     margin-top: 0;
-    margin-bottom: 0.34rem;
+    margin-bottom: 34px;
     box-sizing: border-box;
-    padding-left: 0.36rem;
+    padding-left: 36px;
 }
 .footer-con-c ul{
-    padding-right: 0.76rem;
-    padding-left: 0.36rem;
-    border-right: 0.01rem solid #EBECEB;
-    font-size: 0.14rem;
+    padding-right: 76px;
+    padding-left: 36px;
+    border-right: 1px solid #EBECEB;
+    font-size: 14px;
 }
 .af ul{
     border-right: 0px;
     padding-right: 0px;
 }
 .footer-con-c li{
-    margin-bottom: 0.17rem;
+    margin-bottom: 17px;
 }
 .footer-con-r{
     float: left;
     position: relative;
-    margin-left: 0.70rem;
+    margin-left: 70px;
 }
 .footer-con-r .phone{
     /*height: 0.88rem;*/
-    border:0.05rem solid #00B085;
-    border-radius: 0.48rem;
+    border:5px solid #00B085;
+    border-radius: 48px;
     color:#00AF84;
-    padding-left: 0.40rem;
-    padding-right: 0.40rem;
+    padding-left: 40px;
+    padding-right: 40px;
     position: relative;
-    padding-top: 0.15rem;
-    padding-bottom: 0.15rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
     behavior: url(PIE.htc);
     overflow: hidden;
 
 
 }
 .footer-con-r .phone p{
-    font-size: 0.18rem;
+    font-size: 18px;
     margin: 0;
     /*margin-top: 0.15rem;*/
     /*margin-bottom: 0.15rem;*/
 }
 .phone-dz{
-    padding-left: 0.20rem;
+    padding-left: 20px;
 }
 .phone-icon{
     position:absolute;
-    top:-0.75rem;
-    left: 0.3rem;
-    width:0.73rem;
-    height: 0.75rem;
+    top:-75px;
+    left: 30px;
+    width:73px;
+    height: 75px;
 }
 .phone-icon img{
     width: 100%;
@@ -223,20 +223,11 @@ body,ul,h1{
     width: 100%;
     background: #18211E;
     overflow: hidden;
-    padding-top: 0.20rem;
-    padding-bottom: 0.20rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .footer-ft p{
     text-align: center;
     color: #A7AAA9;
-    font-size: 0.12rem;
+    font-size: 12px;
 }
-
-
-
-
-
-
-
-
-

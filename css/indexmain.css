@@ -1,6 +1,5 @@
 /*header*/
 body{
-    font-family: 'メイリオ イタリック';
     overflow-x: hidden;
 }
 img{
@@ -124,8 +123,6 @@ body,ul,h1{
 .con-idea-head{
     width:2.74rem;
     height:0.65rem;
-    border-bottom: 0.01rem solid #EBEBEB;
-    border-top: 0.01rem solid #EBEBEB;
     position: absolute;
     left: 0;
     right: 0;
@@ -135,6 +132,7 @@ body,ul,h1{
     font-weight: bold;
     top:-0.26rem;
     background: white;
+    line-height: 0.65rem;
 }
 .con-idea-tit{
     text-align: center;
@@ -144,10 +142,15 @@ body,ul,h1{
     font-size: 0.24rem;
 }
 .con-idea-con{
-    width:5.76rem;
+    width:5.96rem;
     margin: 0 auto;
     font-size: .18rem;
-    line-height: .40rem;
+
+}
+.con-idea-con p{
+    margin: 0;
+    text-align: center;
+    margin-bottom: 0.15rem;
 }
 
 
@@ -215,6 +218,8 @@ body,ul,h1{
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
     margin-top: 0.2rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
 
 }
 .con-int-img1{
@@ -361,7 +366,7 @@ body,ul,h1{
 }
 .phone-icon{
     position:absolute;
-    top:-0.70rem;
+    top:-0.75rem;
     left: 0.3rem;
     width:0.73rem;
     height: 0.75rem;
