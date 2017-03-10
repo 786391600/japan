@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/resize.js"></script>
+    <script src="js/jq1.9.js"></script>
+    <script src="js/Slide.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    <link rel="stylesheet" href="css/about.css">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/PIE_IE678.js"></script>
+    <link rel="stylesheet" href="css/aboutmin.css">
+    <![endif]-->
+    <!--[if IE 9]>
+    <script type="text/javascript" src="js/PIE_IE9.js"></script>
+    <![endif]-->
+
+    <script>
+        $(document).ready(function(){
+            resize(1366);
+            if (window.PIE) {
+                $('.phone').each(function() {
+                    PIE.attach(this);
+                });
+                setTimeout(function(){
+                    $('.hd ul li').each(function() {
+                        PIE.attach(this);
+                    })
+                },0)
+                $('.twonav').each(function() {
+                    PIE.attach(this);
+                })
+
+            }
+            $('.fullSlide').mouseover(function(){
+                $('.banner-btn').css({opacity:0.4});
+            })
+            $('.fullSlide').mouseout(function(){
+                $('.banner-btn').css({opacity:0});
+            })
+            jQuery(".fullSlide").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"leftLoop", vis:"auto", autoPlay:true, autoPage:true, trigger:"click" });
+           /*地图加载*/
+           $('.ifr').load(function(){
+               $('.login').hide();
+           })
+            /*二级导航*/
+            $('.nav li').mouseover(function(){
+                var eq=$(this).index()
+                $('.twonav').eq(eq).show();
+            }).mouseout(function(){
+                var eq=$(this).index()
+                $('.twonav').eq(eq).hide();
+            })
+        })
+    </script>
+
+</head>
+<body>
+<div class="header">
+    <div class="header-con">
+        <div class="logo">
+            <a href="javascript:;">
+                <img src="image/logo.png">
+            </a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="javascript:;">製品紹介</a>
+                    <div class="twonav">
+                    <p><a href="javascript:;">Freecall</a></p>
+                    <p><a href="javascript:;">Cloopen SIM</a></p>
+                    <p><a href="javascript:;">Skyroam</a></p>
+                    </div>
+                </li>
+                <li><a href="javascript:;">会社概要</a></li>
+                <li><a href="javascript:;">事業内容</a></li>
+                <li><a href="javascript:;">アクセス</a></li>
+                <li><a href="javascript:;">問い合わせ</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--banner开始-->
+<div class="banner">
+    <img src="image/aboutbanner.png" alt="">
+</div>
+<!--介绍开始-->
+<div class="con">
+    <div class="con-continer">
+        <ul>
+            <li class="con-tit">社名</li>
+            <li class="con-con">Cloopen株式会社</li>
+        </ul>
+        <ul>
+            <li class="con-tit">英語名称</li>
+            <li class="con-con">Cloopen.Co.,Ltd.</li>
+        </ul>
+        <ul>
+            <li class="con-tit">代表取締役</li>
+            <li class="con-con">東山正彦</li>
+        </ul>
+        <ul>
+            <li class="con-tit">資本金</li>
+            <li class="con-con">80,000,000円</li>
+        </ul>
+        <ul>
+            <li class="con-tit">本社所在地</li>
+            <li class="con-con">〒160-0023  東京都新宿区西新宿6-12-1 パークウエスト12F </li>
+        </ul>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.307631911261!2d139.6872718648868!3d35.69404663019135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f2d51c1f811f%3A0x3ce6bd9471482eb!2z44CSMTYwLTAwMjMgVMWNa3nFjS10bywgU2hpbmp1a3Uta3UsIE5pc2hpc2hpbmp1a3UsIDYgQ2hvbWXiiJIxMuKIkjEsIOODkeODvOOCr-OCpuOCqOOCueODiA!5e0!3m2!1szh-CN!2sjp!4v1489117727386" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="login">
+                <img src="image/login.gif" alt="">
+            </div>
+        </div>
+        <ul>
+            <li class="con-tit">支社所在地</li>
+            <li class="con-con">〒 112-0014　東京都文京区関口1-16-1-107</li>
+        </ul>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.7271641789152!2d139.7330127148873!3d35.708331080188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c54f0c04229%3A0xea4276d74cc55269!2s1+Chome-16-1+Sekiguchi%2C+Bunky%C5%8D-ku%2C+T%C5%8Dky%C5%8D-to+112-0014!5e0!3m2!1szh-CN!2sjp!4v1488958945353" width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="ifr"></iframe>
+            <div class="login">
+                <img src="image/login.gif" alt="">
+            </div>
+        </div>
+        <ul>
+            <li class="con-tit">TEL</li>
+            <li class="con-con">03-4588-0088</li>
+        </ul>
+        <ul>
+            <li class="con-tit">FAX</li>
+            <li class="con-con">03-6457-5209</li>
+        </ul>
+        <ul>
+            <li class="con-tit">設立</li>
+            <li class="con-con">平成28年10月</li>
+        </ul>
+    </div>
+</div>
+<!--页脚-->
+<div class="footer">
+    <div class="footer-con">
+        <div class="footer-con-continer">
+            <div class="footer-con-l">
+                <a href="javascript:;">
+                    <img src="image/logow.png" alt="">
+                </a>
+            </div>
+            <div class="footer-con-c">
+                <div class="fnav">
+                    <p class="footer-title">Company</p>
+                    <ul>
+                        <li><a href="javascript:;">会社概要</a></li>
+                        <li><a href="javascript:;">事業内容</a></li>
+                        <li><a href="javascript:;">アクセス</a></li>
+                    </ul>
+                </div>
+                <div class="fnav">
+                    <p class="footer-title">Cloud service</p>
+                    <ul>
+                        <li><a href="javascript:;">サービス内容</a></li>
+                        <li><a href="javascript:;">取引先</a></li>
+                    </ul>
+                </div>
+                <div class="fnav">
+                    <p class="footer-title">SIMカード</p>
+                    <ul>
+                        <li><a href="javascript:;">サービス内容</a></li>
+                        <li><a href="javascript:;">取引先</a></li>
+                    </ul>
+                </div>
+                <div class="fnav af">
+                    <p class="footer-title">Skyroam</p>
+                    <ul>
+                        <li><a href="javascript:;">サービス内容</a></li>
+                        <li><a href="javascript:;">取引先</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-con-r">
+                <div class="phone">
+                    <p class="phone-num">03-6279-0521</p>
+                    <p class="phone-dz">お問い合わせはこちら</p>
+                </div>
+                <div class="phone-icon">
+                    <img src="image/phoneicon.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-ft">
+        <p>
+            Copyright © 2016 CLOOPEN. All rights reserved.
+        </p>
+    </div>
+</div>
+</body>
+</html>
