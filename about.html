@@ -23,7 +23,9 @@
 
     <script>
         $(document).ready(function(){
-            skip();
+            setTimeout(function(){
+                skip();
+            },0)
             resize(1366);
             if (window.PIE) {
                 $('.phone').each(function() {
