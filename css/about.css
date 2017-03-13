@@ -26,24 +26,25 @@ body,ul,h1{
 .con-continer{
     width:9.52rem;
     margin: 0 auto;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
 }
 .con-continer ul{
     width:100%;
-    font-size: 0.2rem;
+    font-size: 0.16rem;
     overflow: hidden;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
 }
 .con-continer li{
     float: left;
 }
 .con-tit{
-    width:26.68%;
+    width:20%;
     color:#00AF84;
 }
 .con-con{
     width:73.3193%;
-    color:#5D5D5D;
+    /*color:#5D5D5D;*/
+    color:black;
 }
 .con-con p{
     margin: 0;
@@ -53,7 +54,7 @@ body,ul,h1{
 .map{
     width:100%;
     height: 4.86rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     position: relative;
 }
 .map iframe{
