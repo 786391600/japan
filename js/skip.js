@@ -36,10 +36,10 @@ function skip(){
     })
     $('.lj').eq(2).click(function(){
         if($(window).scrollTop()>=$('.header').get(0).offsetHeight){
-            var sC=($('.con-continer ul').eq(13).offset().top-$('.header').height()-20);
+            var sC=($('.con-continer ul').eq(12).offset().top-$('.header').height()-20);
             $('body,html').animate({scrollTop:sC},300);
         }else{
-            var sC=($('.con-continer ul').eq(13).offset().top-150);
+            var sC=($('.con-continer ul').eq(12).offset().top-150);
             $('body,html').animate({scrollTop:sC},300);
         }
     })
