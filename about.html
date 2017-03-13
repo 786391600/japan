@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/headfoot.css">
+    <script src="js/skip.js"></script>
     <!--[if IE 8]>
     <script type="text/javascript" src="js/PIE_IE678.js"></script>
     <link rel="stylesheet" href="css/aboutmin.css">
@@ -22,6 +23,7 @@
 
     <script>
         $(document).ready(function(){
+            skip();
             resize(1366);
             if (window.PIE) {
                 $('.phone').each(function() {
@@ -48,9 +50,12 @@
             })
             jQuery(".fullSlide").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"leftLoop", vis:"auto", autoPlay:true, autoPage:true, trigger:"click" });
            /*地图加载*/
-           $('.ifr').load(function(){
-               $('.login').hide();
-           })
+            setTimeout(function(){
+                $('.ifr').load(function(){
+                    $('.login').hide();
+                })
+            },0)
+
             /*二级导航*/
             $('.nav li').mouseover(function(){
                 var eq=$(this).index()
@@ -67,6 +72,8 @@
                     $('.header').css({position:'relative',top:0})
                 }
             })
+            /*跳转*/
+
         })
     </script>
 
@@ -75,7 +82,7 @@
 <div class="header">
     <div class="header-con">
         <div class="logo">
-            <a href="javascript:;">
+            <a href="index.html">
                 <img src="image/logo.png">
             </a>
         </div>
@@ -84,13 +91,13 @@
                 <li><a href="javascript:;">製品紹介</a>
                     <div class="twonav">
                     <p><a href="javascript:;">Freecall</a></p>
-                    <p><a href="javascript:;">Cloopen SIM</a></p>
+                    <p><a href="three.html">Cloopen SIM</a></p>
                     <p><a href="javascript:;">Skyroam</a></p>
                     </div>
                 </li>
-                <li><a href="javascript:;">会社概要</a></li>
-                <li><a href="javascript:;">事業内容</a></li>
-                <li><a href="javascript:;">アクセス</a></li>
+                <li><a href="javascript:;" class="lj">会社概要</a></li>
+                <li><a href="javascript:;" class="lj">事業内容</a></li>
+                <li><a href="javascript:;" class="lj">アクセス</a></li>
                 <li><a href="javascript:;">問い合わせ</a></li>
             </ul>
         </div>
