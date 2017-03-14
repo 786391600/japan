@@ -6,6 +6,7 @@
     <script src="js/resize.js"></script>
     <script src="js/jq1.9.js"></script>
     <script src="js/Slide.js"></script>
+    <script src="js/skip.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
     <link rel="stylesheet" href="css/three.css">
     <link rel="stylesheet" href="css/headfoot.css">
@@ -22,6 +23,7 @@
 
     <script>
         $(document).ready(function(){
+            skip();
             resize(1366);
             if (window.PIE) {
                 $('.phone').each(function() {
@@ -219,9 +221,9 @@
                 <div class="fnav">
                     <p class="footer-title">Company</p>
                     <ul>
-                        <li><a href="javascript:;">会社概要</a></li>
-                        <li><a href="javascript:;">事業内容</a></li>
-                        <li><a href="javascript:;">アクセス</a></li>
+                        <li><a href="about.html?sT=one">会社概要</a></li>
+                        <li><a href="about.html?sT=two">事業内容</a></li>
+                        <li><a href="about.html?sT=three">アクセス</a></li>
                     </ul>
                 </div>
                 <div class="fnav">
@@ -234,7 +236,7 @@
                 <div class="fnav">
                     <p class="footer-title">SIMカード</p>
                     <ul>
-                        <li><a href="javascript:;">サービス内容</a></li>
+                        <li><a href="javascript:;" class="tlj">サービス内容</a></li>
                         <li><a href="javascript:;">取引先</a></li>
                     </ul>
                 </div>
