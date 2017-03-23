@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Cloopen</title>
     <script src="js/resize.js"></script>
     <script src="js/jq1.9.js"></script>
     <script src="js/Slide.js"></script>
@@ -45,7 +45,7 @@
             $('.fullSlide').mouseout(function(){
                 $('.banner-btn').css({opacity:0});
             })
-            jQuery(".fullSlide").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"leftLoop", vis:"auto", autoPlay:true, autoPage:true, trigger:"click" });
+            jQuery(".fullSlide").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"leftLoop", vis:"auto", autoPlay:false, autoPage:false, trigger:"click" });
 //           alert($(window).width())
 
             /*二级导航*/
@@ -97,10 +97,6 @@
 <div class="banner fullSlide">
     <div class="bd">
         <ul>
-            <li><a target="_blank" href="javascript:;"><img src="image/未标题-14.png"/></a></li>
-            <li><a target="_blank" href="javascript:;"><img src="image/未标题-14.png"/></a></li>
-            <li><a target="_blank" href="javascript:;"><img src="image/未标题-14.png"/></a></li>
-            <li><a target="_blank" href="javascript:;"><img src="image/未标题-14.png"/></a></li>
             <li><a target="_blank" href="javascript:;"><img src="image/未标题-14.png"/></a></li>
         </ul>
     </div>

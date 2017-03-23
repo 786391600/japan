@@ -76,7 +76,6 @@ function skip(){
     })
 }
 
-
 function scrollMove(eq,zhi){
     if($(window).scrollTop()>=$('.header').get(0).offsetHeight){
         var sC=($('.con-continer ul').eq(eq).offset().top-$('.header').height()-20);
